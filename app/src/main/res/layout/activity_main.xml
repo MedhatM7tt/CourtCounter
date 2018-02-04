@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medhatmhtt.courtcounter.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TeamATextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Team A"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/TeamAScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:text="0"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/addThreeAButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="#f19a04"
+                        android:onClick="addThree"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="+3 Points"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/addTwoAButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="#f19a04"
+                        android:onClick="addTwo"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="+2 Points"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/addOneAButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="#f19a04"
+                        android:onClick="addOne"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Free Throw"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#797474"
+                    >
+                </View>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TeamBTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Team B"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/TeamBScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:text="0"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/addThreeBButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="#f19a04"
+                        android:onClick="addThree"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="+3 Points"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/addTwoBButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="#f19a04"
+                        android:onClick="addTwo"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="+2 Points"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/addOneBButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="#f19a04"
+                        android:onClick="addOne"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Free Throw"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#f19a04"
+                android:layout_marginTop="75dp"
+                android:onClick="reset"
+                android:text="RESET" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
